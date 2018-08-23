@@ -35,6 +35,12 @@ if (!is_null($events['events'])) //check ค่าในตัวแปร $even
             $source_type = $event['source']['type'];//เก็บที่มาของ event(user หรือ group)
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
             $first_char = substr($txtin,0,1);//ตัดเอาเฉพาะตัวอักษรตัวแรก
+			if($txtin == "hibot")
+			{
+				$txtsend = "hihumen";
+				reply_msg($txtsend,$replyToken);//เรียกใช้ function
+				break;
+			}
 			if($first_char == "@")
 			{
 				$office_id = substr($txtin,1,3);///ได้รหัสการไฟฟ้า 
