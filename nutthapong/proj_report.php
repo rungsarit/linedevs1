@@ -32,6 +32,11 @@ margin-bottom: 10px;
     text-align: center;
 }
 </style>
+<script type = "text/javascript">
+		if(screen.width <= 1000){
+			document.location="https://eass1-bot.herokuapp.com/nutthapong/mproj_report.php";
+			}
+</script>
 </head>
 <body>
     <?php
