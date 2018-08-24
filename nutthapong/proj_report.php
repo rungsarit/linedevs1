@@ -28,7 +28,9 @@ margin-bottom: 10px;
   overflow-y: auto;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-
+.form-group2{
+    text-align: center;
+}
 </style>
 </head>
 <body>
@@ -48,6 +50,13 @@ margin-bottom: 10px;
 </div>
 
 <div class="container-fluid">
+	<div class="row">
+        <div class="col-lg-12">
+            <div class="form-group2">
+                <h2>สถานะงานโครงการ ประจำเดือนสิงหาคม 2561</h2>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-lg-12">
             <div class="table-responsive">
