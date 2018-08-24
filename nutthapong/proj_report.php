@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0," charset="utf-8">
-<title>PSQ V.2</title>
+<title>DATA&REPORT EAS S.1</title>
 <!-- css -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -39,7 +39,7 @@ margin-bottom: 10px;
         
     ?>
 
-<div class="w3-container w3-Orchid ">
+<div class="w3-container w3-orchid ">
     <div class="w3-row">
         <div class="w3-col w3-container m10 l12 w3-center">  
             <h1>Const-Report</h1>
@@ -86,7 +86,7 @@ margin-bottom: 10px;
 										echo "<td>".$objectresult["name"]."</td>";
 										echo "<td>".$objectresult["work_load"]."</td>";
 										echo "<td>".$objectresult["finish"]."</td>";
-										echo "<td>".$objectresult["percent"]."</td>";
+										echo "<td>".$objectresult["percent"]*100 ."</td>";
                                         echo "</tr>";
 					                    $a = $a+1;
 					                }			
