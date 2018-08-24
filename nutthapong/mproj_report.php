@@ -44,7 +44,7 @@ margin-bottom: 10px;
 <div class="w3-container w3-purple ">
     <div class="w3-row">
         <div class="w3-col w3-container m10 l12 w3-center">  
-            <h1>DATA&REPORT EAS S.1</h1>
+            <h5>DATA&REPORT EAS S.1</h5>
         </div>
     </div>
 </div>
@@ -53,7 +53,7 @@ margin-bottom: 10px;
 	<div class="row">
         <div class="col-lg-12">
             <div class="form-group2">
-                <h2>สถานะงานโครงการ ประจำเดือนสิงหาคม 2561</h2>
+                <h6>สถานะงานโครงการ ประจำเดือนสิงหาคม 2561</h6>
             </div>
         </div>
     </div>
@@ -64,18 +64,20 @@ margin-bottom: 10px;
                 $a = 1 ;
 				while($objectresult = mysqli_fetch_array($query_tdd))
 				    {
-                        echo "อันดับที่ ".$a."<br>";
-                        echo $objectresult["approve"]."<br>";
-                        echo $objectresult["date"]."<br>";
-                        echo $objectresult["year"]."<br>";
-						echo $objectresult["oper"]."<br>";
-						echo $objectresult["area"]."<br>";
-						echo $objectresult["wbs"]."<br>";
-						echo $objectresult["status"]."<br>";
-						echo $objectresult["name"]."<br>";
-						echo $objectresult["work_load"]."<br>";
-						echo $objectresult["finish"]."<br>";
-						echo $objectresult["percent"]*100 ."<br>";
+                        echo '<a href="#" class="list-group-item list-group-item-action">';
+						echo "อันดับที่  : ".$a."<br>";
+                        echo "อนุมัติ : ".$objectresult["approve"]."<br>";
+                        echo "วันที่อนุมัติ : ".$objectresult["date"]."<br>";
+                        echo "ปีที่เปิดงาน : ".$objectresult["year"]."<br>";
+						echo "ผู้รับผิดชอบ : ".$objectresult["oper"]."<br>";
+						echo "พื้นที่ : ".$objectresult["area"]."<br>";
+						echo "wbs : ".$objectresult["wbs"]."<br>";
+						echo "สถานะงาน : ".$objectresult["status"]."<br>";
+						echo "ชื่องาน :".$objectresult["name"]."<br>";
+						echo "วงจร-กม.".$objectresult["work_load"]."<br>";
+						echo "วงจร-กม.(ผล) : ".$objectresult["finish"]."<br>";
+						echo "คิดเป็น : ".$objectresult["percent"]*100 ."%<br>";
+						echo '</a>';
 					    $a = $a+1;
 					}			
 				    $a = 0;
