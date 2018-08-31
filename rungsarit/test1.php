@@ -1,3 +1,3 @@
 <?php
-echo"Rungsarit Ruensukon"
+echo"Rungsarit Ruensukon";
 ?>
